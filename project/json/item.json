@@ -1,0 +1,50 @@
+[
+	{
+		"src" : "../img/itemImg/r1.png",
+		"type" : "鲜花玫瑰 - 经典永续系列",
+		"name" : "经典朱砂 80cm长形",
+		"price" : "￥1999"
+	},
+	{
+		"src" : "../img/itemImg/r2.png",
+		"type" : "玫瑰珠宝 - 星座经典系列",
+		"name" : "摩羯座 中型项链",
+		"price" : "￥2399"
+	},
+	{
+		"src" : "../img/itemImg/r3.png",
+		"type" : "鲜花玫瑰 - 经典永续系列",
+		"name" : "经典朱砂 80cm长形",
+		"price" : "￥1999"
+	},
+	{
+		"src" : "../img/itemImg/r4.png",
+		"type" : "鲜花玫瑰 - 经典永续系列",
+		"name" : "经典朱砂 80cm长形",
+		"price" : "￥1999"
+	},
+	{
+		"src" : "../img/itemImg/r5.png",
+		"type" : "鲜花玫瑰 - 经典永续系列",
+		"name" : "经典许愿 80cm长形",
+		"price" : "￥1999"
+	},
+	{
+		"src" : "../img/itemImg/r6.png",
+		"type" : "鲜花玫瑰 - 经典永续系列",
+		"name" : "小经典朱砂 40cm长形",
+		"price" : "￥1520"
+	},
+	{
+		"src" : "../img/itemImg/r7.png",
+		"type" : "玫瑰珠宝 - 星座经典系列",
+		"name" : "海王星-星环 中型项链",
+		"price" : "￥2999"
+	},
+	{
+		"src" : "../img/itemImg/r8.png",
+		"type" : "玫瑰珠宝 - 玫瑰经典系列",
+		"name" : "玫瑰 中型项链",
+		"price" : "￥2399"
+	}
+]

@@ -1,0 +1,586 @@
+@import "base";
+$outwidth:1263px;
+$inwidth:1240px;
+/*top*/
+#top{
+    width: $outwidth;
+    height: 35px;
+    background:#e7e7e7;
+    margin: 0 auto;
+}
+/*topLeft*/
+.top-content{
+    width: $inwidth;
+    height: 35px;
+    margin: 0 auto;
+    background: #E7E7E7;
+    position: relative;
+}
+.rose-logo{
+    width: 128px;
+    height: 35px;
+    position: absolute;
+    left: 1px;
+    float: left;
+    background: url(http://www.roseonly.com.cn/upload/syspic_new/14769527379522129.svg) 189px 80px;
+    background-color: #FFFFFF;
+    background-size: 249px;
+}
+.rose-logo:hover{
+    background: url(http://www.roseonly.com.cn/upload/syspic_new/14769547496095367.svg) 189px 80px;
+    background-color: #414141;
+    background-size: 249px;
+}
+.love-logo{
+    width: 128px;
+    height: 35px;
+    float: left;
+    position: absolute;
+    left: 129px;
+    background: url(http://www.roseonly.com.cn/upload/syspic_new/15006335440104987.svg) no-repeat 29px;
+    background-color: #E7E7E7 ;
+    background-size: 70px 35px;
+}
+.love-logo:hover{
+    background: url(http://www.roseonly.com.cn/upload/syspic_new/15006336097366439.svg) no-repeat 29px;
+    background-color: #414141;
+    background-size: 70px 35px;
+}
+.line-logo{
+    width: 1px;
+    height: 35px;
+    background: #d6d6d6;
+    position: absolute;
+    left: 256px;
+}
+/*topRight*/
+.right{
+    a{
+        color: #000000;
+        float: left;
+        text-align: center;
+    }
+}
+.right{
+    float: right;
+    height: 35px;
+    line-height: 35px;
+    font-size: 12px;
+}
+.right{
+    .nologin{
+        min-width: 40px;
+    }
+    .h_login{
+        min-width: 40px;
+    }
+}
+.nologin{
+    .l_line{
+        padding: 0 3px 0 6px;
+    }
+}
+.nologin{
+    .l_font:hover{
+        font-weight: 600;
+    }
+}
+.h_login{
+    .l_line{
+        padding: 0 3px 0 6px;
+    }
+}
+.h_login{
+    .l_font:hover{
+        font-weight: 600;
+    }
+}
+.right-cart{
+    width: 18px;
+    min-width: 18px;
+    height: 23px;
+    position: relative;
+    top: 5px;
+    left: -2px;
+    background-image: url(../img/icon.svg);
+    background-size: 100% auto;
+}
+.right-cart:hover{
+    background-image: url(../img/icon.svg);
+    background-size: 20px;
+}
+.right_cur{
+    position: fixed;
+    top: 2px;
+    left: 1132px;
+    height: 36px;
+    z-index: 700;
+    a{color: #FFFFFF;}
+    .right-cart{background-image: url(../img/cart_cur.svg);}
+    #cart-num{color: #FFFFFF;}
+}
+/*logo*/
+#logo{
+    width: $inwidth;
+    height: 80px;
+    background: #FFFFFF;
+    margin: 0 auto;
+}
+#logo{
+    .logo-cont{
+        width: $inwidth;
+        height: 80px;
+        display: block;
+        text-align: center;
+        overflow: hidden;
+    }
+}
+.logo-cont{
+    img{ 
+        margin:0 auto;
+    }
+}
+/*logo_cur*/
+.logo_cur{
+    width: 120px;
+    height: 30px;
+    display: block;
+    position: fixed;
+    top: 6px;
+    left: 1.5px;
+    background-color: #414141;
+    background-image: url(../img/logo_cur.svg);
+    background-position: 0 -16px;
+    background-size: 140px 55px;
+    z-index: 700;
+    display: none;
+}
+/*nav*/
+
+.nav{
+    width: $outwidth;
+    height: 40px;
+    margin: 0 auto;
+    background: #414141;
+    font-size: 14px;
+    position: relative;
+    text-align: center;
+    .nav-cont{
+        width: $inwidth;
+        height: 40px;
+        margin: 0 auto;
+        line-height: 40px;
+        li{
+            float: left;
+            width: 95px;
+            margin: 0 32px;
+            a{
+                color: #FFFFFF;
+                display: block;
+                height: 40px;
+            }
+            a:hover{
+                background: #FFFFFF;
+                color: #414141;
+            }
+            .menu{
+                width: 100%;
+                display: none;
+                
+                font-size: 14px;
+                background: #FFFFFF;
+                position: absolute;
+                top: 40px;
+                left: 0;
+                z-index: 999;
+                border-bottom: 3px solid #414141;
+                min-height: 320px;
+                .menus{
+                    width: $inwidth;
+                    min-height:320px;
+                    margin: 0 auto;
+                    position: relative;
+                    .num1{
+                        margin-top: 25px;
+                        float: left;
+                        text-align: left;
+                        padding: 0 65px;
+                        border-left: 1px solid #414141;
+                        a{
+                            display: block;
+                            height: 35px;
+                            span{
+                                display: block;
+                                color: #000000;
+                                padding-bottom: 16px;
+                                position: relative;
+                                height: 19px;
+                                line-height: 19px;
+                                label{
+                                    position: absolute;
+                                    top: -4px;
+                                    width: 22px;
+                                    height: 11px;
+                                    margin-left: 2px;
+                                    background: url(../img/new.png) no-repeat center;
+                                }
+                                .hot{
+                                    background: url(../img/hot.png) no-repeat center;
+                                }
+                            } 
+                            span:hover{ color: #83847e}  
+                        }
+                        .num1_tab{
+                                font-size: 14px;
+                                font-weight: bold;
+                                height: 19px;
+                                line-height: 19px; 
+                                display: block;
+                                color: #000000;
+                                padding-bottom: 16px;
+                                position: relative; 
+                            }
+                    }
+                    .num1:first-child{
+                        border: 0;
+                    }
+                    .menu_pic{
+                        width: 605px;
+                        height: 250px;
+                        background: #d1d1d1;
+                        position: absolute;
+                        top: 25px;
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+.nav{
+    .nav-cont{
+        li:first-child{
+            margin-left: 0;
+            background: #c71f2c;
+        }
+    }
+}
+.nav_cur{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 666;
+    .nav-cont{
+        width: 1000px;
+       
+    }
+}
+#footer{
+    width: 100%;
+    min-width: $inwidth;
+   
+    clear: both;
+    .footer-title{
+        width: $inwidth;
+        margin: 15px auto 75px;
+        padding: 30px 0px 40px;
+        height: 70px;
+        border-bottom: 1px solid #dadada;
+        .f-title-a{
+            width: 300px;
+            height: 70px;
+            display: block;
+            float: left;
+            color: #414141;
+            .f-title-div{
+                margin-left: 97px;
+                font-size: 20px;
+                padding-top: 12px;
+                .f-title-div-span{
+                    font-size: 14px;
+                    margin-top: 7px;
+                    display: block;
+                }
+            }
+        }
+        .f-title-a:first-child{margin-left: 30px;}
+        .bg1{
+            background: url(../img/1.svg) no-repeat scroll -55px center;
+            background-size: 75% auto;
+        }
+        .bg2{
+            background: url(../img/2.svg) no-repeat scroll -55px center;
+            background-size: 75% auto;
+        }
+        .bg3{
+            background: url(../img/3.svg) no-repeat scroll -55px center;
+            background-size: 75% auto;
+        }
+        .bg4{
+            background: url(../img/4.svg) no-repeat scroll -55px center;
+            background-size: 75% auto;
+        }
+    }
+    .footer-box{
+        width: $inwidth;
+        height: 210px;
+        margin: 0 auto;
+        .box_l{
+            float: left;
+            .wz{
+                position: relative;
+                margin-top: 30px;
+                
+                .wechat{
+                    position: absolute;
+                    top: -2px;
+                    left: 80px;
+                }
+                .weibo{
+                    position: absolute;
+                    left: 125px;
+                    top: -4px;
+                }
+            }
+        }
+        ul{
+            margin-top: 0;
+            float: left;
+            padding: 0 60px;
+            text-align: center;
+            background: url(../img/line-bg.jpg) no-repeat right 0;
+            p{
+                margin-bottom: 20px;
+                font-size: 16px;
+                margin-top: 0;
+                color: #000000;
+            }
+            li{
+                line-height: 30px;
+               
+                text-align: left;
+                margin-left: 1px;
+                a{
+                    color: #414141;
+                    font-size: 14px;
+                }
+            }
+        }
+        .code_r{
+            float: right;
+            img{width: 120px;}
+            p{
+                margin-top: 5px;
+                font-size: 14px;
+                text-align: center;
+                color: #000000;
+            }
+            }
+    }
+    .foot{
+        width: 100%;
+        height: 45px;
+        font-size: 14px;
+        background: #414141;
+        color: #FFFFFF;
+        line-height: 45px;
+        text-align: center;
+        clear: both;
+    }
+}
+.preview{
+    position: absolute;
+    top: 4200px;
+    left: 391px;
+    border: 10px solid #e4e4e4;
+    width: 500px;
+    height: 500px;
+    display: none;
+    background: #FFFFFF;
+    opacity: 0;
+    z-index: 99;
+    img{
+        width: 480px;
+        height: 480px;
+    }
+}
+#back-to-top{
+    width: 45px;
+    height: 45px;
+    display: none;
+    opacity: 0;
+    background: #969696;
+    position: fixed;
+    bottom: 45px;
+    right: 5px;
+    border-radius: 8px;
+    .go-top{
+        display: block;
+        height: 45px;
+        border-radius: 5px;
+        line-height: 65px;
+        padding-left: 2px;
+        img{
+            width: 37px;
+            margin-top: 5px;
+        }
+    }
+}
+#back-to-top:hover{background: #414141;}
+.kefu{
+    position: fixed;
+    z-index: 999;
+    box-sizing: content-box;
+    height: 45px;
+    bottom: 100px;
+    width: 45px;
+    right: 5px;
+    background: #969696;
+    border-radius: 5px;
+    #kf-btn{
+        text-decoration: none;
+        outline: none;
+        font-family: Microsoft Yahei, Arial, Helvetica;
+        color: #fff;
+        font-size: 16px;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border: none;
+        float: none;
+        img{
+            vertical-align: middle;
+            border: none;
+            float: none;
+            position: static;
+            margin-left: 0px;
+            width: 42px;
+            height:45px;
+        }
+    }
+    #kf-btn:hover{
+        background: #414141;
+        width: 45px;
+        border-radius: 5px
+    }
+    .message{
+        width: 115px;
+        height: 120px;
+        position: fixed;
+        bottom: 55px;
+        right: 50px;
+        display: none;
+        .mes-cont{
+            width: 102px;
+            height: 110px;
+            position: relative;
+            background: #fff;
+            border: 1px solid #dcdcdc;
+            border-radius: 5px;
+            div{
+                text-align: center;
+                font-size: 12px;
+            }
+            .tel_sj{
+                position: absolute;
+                top: 45px;
+                right: -9px;
+            }
+            .tel-cont{
+                .tel_txt {
+                    color: #8d8d8d;
+                    font-size: 12px;
+                    background: url(http://www.roseonly.com.cn/upload/syspic_new/14769597664198841.svg)no-repeat -16px -9px;
+                    background-size: 66px;
+                    line-height: 25px;
+                    margin:0;
+                    margin-top: 8px;
+                    padding-left: 11px;
+                    letter-spacing: 1px;
+                }
+                .tel_phone {
+                    color: #414141;
+                    font-size: 12px;
+                    margin:0;
+                }
+            }
+            .zxkf{
+                background: #969696;
+                width: 86px;
+                height: 28px;
+                color: #fff;
+                line-height: 28px;
+                border-radius: 3px;
+                margin: 0 auto;
+                margin-top: 8px;
+                font-size: 12px;
+                display: block;
+                text-align: center;
+                letter-spacing: 1px
+            }
+            .zxkf:hover {
+                background: #414141;
+                cursor: pointer;
+                display: block;
+                a{
+                    color: #fff;
+                }
+            }
+            .tel_line {
+                width: 86px;
+                border-top: 1px solid #dfdfdf;
+                margin: 0 auto;
+                margin-top: 12px;
+            }
+        }
+        
+    }
+}
+#ewm-box{
+    position: fixed;
+    z-index: 999;
+    box-sizing: content-box;
+    height: 45px;
+    bottom: 155px;
+    width: 45px;
+    right: 5px;
+    transition: all 0.3s ease-in-out 0.1s;
+    -webkit-transition: all 0.3s ease-in-out 0.1s;
+    background: #969696;
+    border-radius: 5px;
+    #ewm {
+        text-decoration: none;
+        outline: none;
+        font-family: Microsoft Yahei, Arial, Helvetica;
+        color: #fff;
+        font-size: 16px;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        border: none;
+        float: none;
+        img{
+            vertical-align: middle;
+            border: none;
+            float: none;
+            position: static;
+            margin-left: 5px;
+            width: 35px;
+            height: 45px;
+        }
+    }
+    #ewm:hover {
+        background: #414141;
+        width: 45px;
+        border-radius: 5px
+    }
+    .ewm-cont{
+        width: 262px;
+        height: 146px;
+        position: fixed;
+        bottom: 103px;
+        right: 50px;
+        display: none;  
+    }
+}

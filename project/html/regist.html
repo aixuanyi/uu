@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../js/myCookie.js"></script>
+		<script type="text/javascript" src="../js/public.js"></script>
+		<script type="text/javascript" src="../js/regist.js"></script>
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/regist.css"/>
+	</head>
+	<body>
+		<!--top-->
+		<div id="topCont"></div>
+		<!--描述：logo -->
+		<div id="logo">
+			<a href="../index.html" class="logo-cont"><img src="../img/14871272268992899.jpg" title="roseonly官网" alt="roseonly官网" /></a>
+		</div>
+		<div class="logo_cur">
+			<a href="../index.html"></a>
+		</div>
+		<!--menu-->
+		<div id="navCont"></div>
+		<div id="container">
+			<div class="beijing">
+				<!--注册开始-->
+				<div class="zc_cur">
+					<a class="qixi" href="http://www.roseonly.com.cn/list/shuangshiyi.html"></a>
+					<form id="registerForm" action="login.html" method="post">
+						<div class="register">
+							<div class="register_nav">
+								<select id="country" class="indent">
+									<option value="61">澳大利亚</option>
+									<option value="82">韩国</option>
+									<option value="1">加拿大</option>
+									<option value="60">马来西亚</option>
+									<option value="1">美国</option>
+									<option value="81">日本</option>
+									<option value="65">新加坡</option>
+									<option value="44">英国</option>
+									<option value="86" selected="selected">中国</option>
+									<option value="853">中国澳门</option>
+									<option value="886">中国台湾</option>
+									<option value="852">中国香港</option>
+								</select>
+							</div>
+							<div class="register_nav">
+								<input type="text" name="username" id="username" placeholder="请输入手机号" maxlength="11" />
+								<div class="prefixC">+86</div>
+								<div class="validate phoneNum">请填写正确的手机号</div>
+								<div class="validate copyTel">您的手机号码已存在，请更换手机号！</div>
+							</div>
+							<div class="register_nav" id="mailway">
+								<input type="text" name="rand" id="rand" placeholder="图片验证码" maxlength="4" class="register_yzm" />
+								<div class="yzm">
+									<img id="imgYzm" src="" alt="验证码" title="验证码"/>
+								</div>
+								<div class="validate imgNum">请输入四位图片验证码</div>
+								<a class="yzmChange" href="javascript:;">换一张</a>
+							</div>
+							<div class="register_nav" id="mobileway">
+								<input type="text" id="mobile" class="register_yzm" placeholder="短信验证码" maxlength="4" />
+								<span>
+									<div class="sms_btn">
+										<a id="mes_yzm" href="javascript:;">发送验证码</a>
+									</div>
+								</span>
+							</div>
+							<div class="register_nav" style="margin-bottom: 0;height: 45px;">
+								<input type="password" name="password" id="password" placeholder="6-16位数字或字母" class="register_pass" />
+								<div class="validate passNum">密码长度为6-16个字符</div>
+							</div>
+							<div class="register_p">
+								<p class="yyzh">
+									<a href="login.html">已有账号</a>
+								</p>
+							</div>
+							<div class="register_button">
+								<a href="javascript:;" id="registerSub">创建账号</a>
+							</div>
+							<div class="register_bottom">roseonly支持门店城市同城速递服务!</div>
+						</div>
+					</form>
+				
+				</div>
+			</div>
+		</div>
+		
+		<!--footer底部-->
+		<div id="footCon"></div>
+		<div class="preview">
+			<img src="../img/QR-big.jpg" alt="扫描二维码" />
+		</div>
+		<!--返回顶部-->
+		<div id="back-to-top">
+			<a href="javscript:;" class="go-top">
+				<img src="../img/top.svg" />
+			</a>
+		</div>
+		<!--客服-->
+		<div class="kefu">
+			<a href="javascript:;" id="kf-btn">
+				<img src="../img/kf.svg" />
+			</a>
+			<div class="message">
+				<div class="mes-cont">
+					<div class="tel_sj">
+						<img src="../img/tel_sj.png" />
+					</div>
+					<div class="tel-cont">
+						<p class="tel_txt">联系电话</p>
+						<p class="tel_phone">400-1314-520</p>
+					</div>
+					<div class="tel_line"></div>
+					<div class="zxkf">
+						<a href="http://www.sobot.com/chat/pc/index.html?sysNum=1fe87079144a4587872a516c25aabd86">在线客服</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--二维码-->
+		<div id="ewm-box">
+			<a href="javascript:;" id="ewm">
+				<img src="../img/evm.svg" />
+			</a>
+			<div class="ewm-cont">
+				<img src="../img/ewm.png" />
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+		$("#topCont").load("public.html #top",function(){
+			$("#top .right .nologin").remove();
+			$("#top .right .h_login").remove();
+		});
+		$("#navCont").load("public.html .nav", function() {
+			var $menu = $(".nav .nav-cont li .menu");
+			$(".nav .nav-cont li a").mouseover(function() {
+				$(this).next(".menu").stop().fadeIn(1000);
+			})
+			$(".nav .nav-cont li a").mouseout(function() {
+				$(this).next(".menu").stop().fadeOut(500);
+			})
+			$menu.mouseover(function() {
+				$(this).stop().fadeIn(500);
+			})
+			$menu.mouseout(function() {
+				$(this).stop().fadeOut(500);
+			})
+		});
+		$("#footCon").load("public.html #footer",function(){
+			//微信二维码
+			var $view = $("#footer .footer-box .wechat");
+			$view.mouseover(function() {
+				$(".preview").css("display", "block").stop().animate({
+					"opacity": 1
+				}, 500)
+			})
+			$view.mouseout(function() {
+				$(".preview").css("display", "none").stop().animate({
+					"opacity": 0
+				}, 500)
+			})
+		});
+	</script>

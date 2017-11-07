@@ -1,0 +1,208 @@
+#container{
+    width: 100%;
+    min-width: 1240px;
+    height: 650px;
+    .beijing{
+        background: url(../img/background.jpg) no-repeat center;
+        height: 673px;
+        width: 100%;
+        position: relative;
+        background-position:-327px ;
+        .zc_cur{
+            width: 1220px;
+            height: 673px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -610px;
+            .qixi{
+                display: block;
+                position: absolute;
+                left: 0;
+                width: 815px;
+                height: 613px;
+            }
+            #registerForm{
+                margin-top: 35px;
+                .register{
+                    width: 395px;
+                    height: 475px;
+                    background: #fafafa;/*;#f1f1f1*/
+                    padding-top: 40px;
+                    font-size: 14px;
+                    color: #000;
+                    float: right;
+                    position: relative;
+                    .register_nav{
+                        display: table;
+                        position: relative;
+                        margin: 0 auto;
+                        height:60px;
+                        .indent{
+                            width: 290px;
+                            text-indent: 0;
+                            border: solid 1px #b3b3b3;
+                            font-size: 14px;
+                            padding: 13px 0 14px 10px;
+                            position: relative;
+                            margin-top: 0px;
+                            option{
+                                border: 1px solid #B3B3B3;
+                                background: #fff;
+                                outline: 0;
+                            }
+                        }
+                        select{
+                            background: url(../img/rgsj.png) no-repeat scroll 265px center #FFFFFF;
+                            appearance: none;
+                            -webkit-appearance: none;
+                            -moz-appearance: none;
+                            outline: 0;
+                        }
+                        #username{
+                            width: 280px;
+                            text-indent: 50px;
+                            border: solid 1px #b3b3b3;
+                            font-size: 14px;
+                            padding: 13px 0 14px 10px;
+                            position: relative;
+                            margin-top: 0px;
+                            outline: 0;
+                        }
+                        .prefixC{
+                            width:50px;
+                            line-height:45px; 
+                            border-right: solid 1px #b3b3b3;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            text-align: center;
+                        }
+                        .validate{
+                            color: #EB2D47;
+                            font-size: 12px;
+                            display: none;
+                            text-align: left;
+                            width: 250px;
+                            height:22px;
+                            line-height: 22px;
+                            padding-left: 16px;
+                            background: url(../img/warning.png) no-repeat left center;
+                        }
+                        .register_yzm{
+                            width: 280px;
+                            border: solid 1px #b3b3b3;
+                            -moz-border:solid 1px #b3b3b3;
+                            -o-border:solid 1px #b3b3b3;
+                             -weikit-border:solid 1px #b3b3b3;
+                            position: relative;
+                            font-size: 14px;
+                            padding: 14px 0 14px 10px;
+                            margin-top: 0px;
+                            outline: 0;
+                        }
+                        .yzm{
+                            display: table-cell;
+                            height: 40px;
+                            vertical-align: middle;
+                            margin: 0;
+                            padding: 0;
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            img{
+                                display: block;
+                            }
+                        }
+                        .yzmChange{
+                            color: #83847e;
+                            font-size: 12px;
+                            display: table-cell;
+                            vertical-align: middle;
+                            float: right;
+                            height: 30px;
+                            line-height: 30px;
+                            margin-right: 50px;
+                            display: inline;
+                            position: absolute;
+                            right: -93px;
+                            /* top: 175px; */
+                            top: 7px;
+                        }
+                        span{
+                            position: absolute;
+                            line-height: 25px;
+                            height: 25px;
+                            vertical-align: middle;
+                            right: 0;
+                            top: 0;
+                            a{
+                                width: 100px;
+                                height: 46px;
+                                line-height: 46px;
+                                display: block;
+                                text-align: center;
+                                color: #000;
+                                background: #d2d2d2;
+                            }
+                            a:hover{
+                                background-color: #666;
+                                color:#fff;
+                            }
+                        }
+                        .register_pass{
+                            width: 280px;
+                            border: solid 1px #b3b3b3;
+                            font-size: 14px;
+                            padding: 14px 0 14px 10px;    
+                        }
+                        .register_pass:focus{
+                            border: 1px solid #b3b3b3;
+                            outline: none;
+                        }
+                    }
+                    .register_p{
+                        width: 290px;
+                        height: 40px;
+                        margin: 0 auto;
+                        line-height: 40px;
+                        .yyzh {
+                            margin: 0;
+                            float: right;
+                        }
+                    }
+                    .register_button{
+                        width: 290px;
+                        margin: 0 auto;
+                        a{
+                            width: 290px;
+                            height: 45px;
+                            line-height: 45px;
+                            display: block;
+                            text-align: center;
+                            color: #fff;
+                            font-size: 16px;
+                            letter-spacing: 2px;
+                            background: rgb(198,198,198) none repeat scroll 0% 0%;
+                        }
+                        a:hover{
+                            background-color: #666;
+                        }
+                    }
+                    .register_bottom{
+                        width: 365px;
+                        height: 58px;
+                        background: url(../img/che.svg) no-repeat scroll 15px center #c6c6c6;
+                        background-size: 25% auto;
+                        text-align: center;
+                        line-height: 58px;
+                        font-size: 16px;
+                        position: absolute;
+                        bottom: 0;
+                        padding-left: 30px;
+                    }
+                }
+            }
+        }
+    }
+}

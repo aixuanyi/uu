@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
+		<script type="text/javascript" src="../js/myCookie.js"></script>
+		<script type="text/javascript" src="../js/public.js"></script>
+		<script src="../js/list.js" type="text/javascript"></script>
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/list.css" />
+	</head>
+
+	<body>
+		<!--top-->
+		<div id="topCont">
+
+		</div>
+		<!--描述：logo -->
+		<div id="logo">
+			<a href="../index.html" class="logo-cont"><img src="../img/14871272268992899.jpg" title="roseonly官网" alt="roseonly官网" /></a>
+		</div>
+		<div class="logo_cur">
+			<a href="../index.html"></a>
+		</div>
+		<!--menu-->
+		<div id="navCont"></div>
+		<!--main-->
+		<div id="main">
+			<div class="series"></div>
+			<div class="rose-filter">
+				<a id="zonghe" class="sort_add" href="javascript:;">综合</a>
+				<a id="sale" href="javascript:;">销量</a>
+				<a id="new" href="javascript:;">最新</a>
+				<a id="pay" href="javascript:;">价格</a>
+				<input type="number" id="minprice" class="sortprice" min="0" placeholder="￥" />
+				<span class="rose_select_span">—</span>
+				<input type="number" id="maxprice" class="sortprice" min="0" placeholder="￥" />
+			</div>
+			<ul id="prolist">
+				
+			</ul>
+		</div>
+		<!--footer-->
+		<div id="footCon"></div>
+		<div class="preview">
+			<img src="../img/QR-big.jpg" alt="扫描二维码" />
+		</div>
+		<!--返回顶部-->
+		<div id="back-to-top">
+			<a href="javscript:;" class="go-top">
+				<img src="../img/top.svg" />
+			</a>
+		</div>
+		<!--客服-->
+		<div class="kefu">
+			<a href="javascript:;" id="kf-btn">
+				<img src="../img/kf.svg" />
+			</a>
+			<div class="message">
+				<div class="mes-cont">
+					<div class="tel_sj">
+						<img src="../img/tel_sj.png" />
+					</div>
+					<div class="tel-cont">
+						<p class="tel_txt">联系电话</p>
+						<p class="tel_phone">400-1314-520</p>
+					</div>
+					<div class="tel_line"></div>
+					<div class="zxkf">
+						<a href="http://www.sobot.com/chat/pc/index.html?sysNum=1fe87079144a4587872a516c25aabd86">在线客服</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--二维码-->
+		<div id="ewm-box">
+			<a href="javascript:;" id="ewm">
+				<img src="../img/evm.svg" />
+			</a>
+			<div class="ewm-cont">
+				<img src="../img/ewm.png" />
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+	$("#topCont").load("public.html #top",function(){
+		$(".h_login").css("display","none");
+		var cookie = getCookie("username");
+		if(cookie.length!=0){
+			$(".nologin").css("display","none");
+			$(".h_login").css("display","block");
+		}
+		//console.log(cookie);
+		$("#exit").click(function(){
+			removeCookie("username");
+			$(".h_login").css("display","none");
+			$(".nologin").css("display","block");
+		})
+	});
+	$("#navCont").load("public.html .nav", function() {
+		var $menu = $(".nav .nav-cont li .menu");
+		$(".nav .nav-cont li a").mouseover(function() {
+			$(this).next(".menu").stop().fadeIn(1000);
+		})
+		$(".nav .nav-cont li a").mouseout(function() {
+			$(this).next(".menu").stop().fadeOut(500);
+		})
+		$menu.mouseover(function() {
+			$(this).stop().fadeIn(500);
+		})
+		$menu.mouseout(function() {
+			$(this).stop().fadeOut(500);
+		})
+	});
+	$("#footCon").load("public.html #footer",function(){
+		//微信二维码
+		var $view = $("#footer .footer-box .wechat");
+		$view.mouseover(function() {
+			$(".preview").css("display", "block").stop().animate({
+				"opacity": 1
+			}, 500)
+		})
+		$view.mouseout(function() {
+			$(".preview").css("display", "none").stop().animate({
+				"opacity": 0
+			}, 500)
+		})
+	});
+</script>
