@@ -15,10 +15,7 @@
 		<div id="topCont"></div>
 		<!--描述：logo -->
 		<div id="logo">
-			<a href="../index.html" class="logo-cont"><img src="../img/14871272268992899.jpg" title="roseonly官网" alt="roseonly官网" /></a>
-		</div>
-		<div class="logo_cur">
-			<a href="../index.html"></a>
+			<a href="index.html" class="logo-cont"><img src="../img/14871272268992899.jpg" title="roseonly官网" alt="roseonly官网" /></a>
 		</div>
 		
 		<!--内容开始-->
@@ -97,17 +94,23 @@
 </html>
 <script>
 	$("#topCont").load("public.html #top",function(){
+		//判断是否登录
 		$(".h_login").css("display","none");
 		var cookie = getCookie("username");
 		if(cookie.length!=0){
 			$(".nologin").css("display","none");
 			$(".h_login").css("display","block");
 		}
+		//退出
 		$("#exit").click(function(){
 			removeCookie("username");
 			$(".h_login").css("display","none");
 			$(".nologin").css("display","block");
 		})
+		//购物车数字
+		var shopCookie = getCookie("shoplist");
+		$("#cart-num").html("("+shopCookie.length+")");
+		
 	});
 	
 	$("#footCon").load("public.html #footer",function(){

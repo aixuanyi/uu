@@ -22,7 +22,7 @@
 			<a href="../index.html" class="logo-cont"><img src="../img/14871272268992899.jpg" title="roseonly官网" alt="roseonly官网" /></a>
 		</div>
 		<div class="logo_cur">
-			<a href="../index.html"></a>
+			<a href="index.html"></a>
 		</div>
 		<!--menu-->
 		<div id="navCont"></div>
@@ -303,33 +303,23 @@
 	</body>
 </html>
 <script>
-	/*$(".h_login").css("display","none");
-	var cookie = getCookie("username");
-	if(cookie.length!=0){
-		$(".nologin").css("display","none");
-		$(".geren").css("display","block");
-	}*/
-	//console.log(cookie);
-	/*var str = location.href;
-	var arr = str.split("?")[1];
-	var id = arr.split("=")[1];
-	//console.log(id);
-	if(id == 1){
-		$(".nologin").css("display","none");
-		$(".h_login").css("display","block");
-	}*/
 	$("#topCont").load("public.html #top",function(){
+		//判断是否登录
 		$(".h_login").css("display","none");
 		var cookie = getCookie("username");
 		if(cookie.length!=0){
 			$(".nologin").css("display","none");
 			$(".h_login").css("display","block");
 		}
+		//退出
 		$("#exit").click(function(){
 			removeCookie("username");
 			$(".h_login").css("display","none");
 			$(".nologin").css("display","block");
 		})
+		//购物车数字
+		var shopCookie = getCookie("shoplist");
+		$("#cart-num").html("("+shopCookie.length+")");
 	});
 	$("#navCont").load("public.html .nav", function() {
 		var $menu = $(".nav .nav-cont li .menu");

@@ -7,7 +7,7 @@
 		<script type="text/javascript" src="../js/jquery-1.11.3.js"></script>
 		<script type="text/javascript" src="../js/myCookie.js"></script>
 		<script type="text/javascript" src="../js/public.js"></script>
-		<script src="../js/list.js" type="text/javascript"></script>
+		<script src="../js/meiguishoupeng.js" type="text/javascript"></script>
 		<link rel="stylesheet" type="text/css" href="../css/public.css" />
 		<link rel="stylesheet" type="text/css" href="../css/list.css" />
 	</head>
@@ -19,7 +19,7 @@
 		</div>
 		<!--描述：logo -->
 		<div id="logo">
-			<a href="../index.html" class="logo-cont"><img src="../img/14871272268992899.jpg" title="roseonly官网" alt="roseonly官网" /></a>
+			<a href="index.html" class="logo-cont"><img src="../img/14871272268992899.jpg" title="roseonly官网" alt="roseonly官网" /></a>
 		</div>
 		<div class="logo_cur">
 			<a href="../index.html"></a>
@@ -87,18 +87,22 @@
 </html>
 <script>
 	$("#topCont").load("public.html #top",function(){
+		//判断是否登录
 		$(".h_login").css("display","none");
 		var cookie = getCookie("username");
 		if(cookie.length!=0){
 			$(".nologin").css("display","none");
 			$(".h_login").css("display","block");
 		}
-		//console.log(cookie);
+		//退出
 		$("#exit").click(function(){
 			removeCookie("username");
 			$(".h_login").css("display","none");
 			$(".nologin").css("display","block");
 		})
+		//购物车数字
+		var shopCookie = getCookie("shoplist");
+		$("#cart-num").html("("+shopCookie.length+")");
 	});
 	$("#navCont").load("public.html .nav", function() {
 		var $menu = $(".nav .nav-cont li .menu");

@@ -84,7 +84,7 @@ $(function(){
 			moveR();
 		},3000);
 	}
-	//play();
+	play();
 	//鼠标移入移出图片事件
 	$(".swiper-img li").mouseover(function(){
 		clearInterval($timer);
